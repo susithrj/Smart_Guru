@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-db_connection = 'mysql+pymysql://root:@localhost/questions'
+db_connection = 'mysql+pymysql://root:@localhost/test'
 
 conn = create_engine(db_connection)
 metadata = pd.read_sql("select * from questions", conn)
